@@ -1,3 +1,8 @@
+// name: a-completely-normal-piano.ck
+// desc: a completely normal one-octave keyboard. Play by clicking the notes on the interface.
+// author: Tao-Tao He
+// date: Sept. 29, 2026
+
 GG.camera().orthographic(); // 2d scene, set camera to orthographic
 
 // Copy-pasted from cheatsheet and modified
