@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// name: FFruiT_NINJA.ck
+// name: FFruiT_NINJA_v1.ck
 // desc: Fruit ninja, but your frequency spectrum is your blade
 // 
 // author: Tao-Tao He
