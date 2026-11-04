@@ -1095,6 +1095,19 @@ fun Chord getNewChord(GUA target, menuButton selected)
     return newChord;
 }
 
+// Function for printing root notes
+fun void printRoot(int newRoot, vec3 color)
+{
+    GText r --> GG.scene();
+    r.pos(@(0,-0.5,1));
+    r.alpha(0.2);
+    r.sca(3);
+    r.color(color);
+    r.text(Std.itoa(newRoot));
+    300::ms => now;
+    r --< GG.scene();
+}
+
 // Chommand for taking the selected action on the selected chord
 class updateChord extends Chommand
 {
@@ -1105,9 +1118,12 @@ class updateChord extends Chommand
     {
         if(selected != null)
         {
+            target.getChord().getroot() => int curRoot;
             getNewChord(target, selected) @=> Chord newChord;
+            newChord.getroot() => int newRoot;
             target.updateChord(newChord);
             spork ~target.updateEffect(getChordColor(newChord));
+            if(curRoot != newRoot) {spork ~printRoot(newRoot, getChordColor(newChord));}
         }
     }
 }
