@@ -9,4 +9,6 @@ bagua_harmony_sequencer - Nov. 3, 2026
 
 * to run bagua_harmony_sequencer.ck, make sure the OCBR.tff file is placed in the same folder as bagua_harmony_sequencer.ck
 
+chuckmas.ck - Nov. 18, 2026 
+
 ChuGL programs
