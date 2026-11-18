@@ -11,4 +11,6 @@ bagua_harmony_sequencer - Nov. 3, 2026
 
 chuckmas.ck - Nov. 18, 2026 
 
+* to run chuckmas.ck, unzip assets.zip and place in same folder as chuckmas.ck
+
 ChuGL programs
